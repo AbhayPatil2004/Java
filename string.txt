@@ -1,0 +1,112 @@
+
+string 
+ 
+ 1. Length & Character Access
+int length() – Returns the length of the string.
+
+char charAt(int index) – Returns the character at the specified index.
+
+int codePointAt(int index) – Returns the Unicode code point at the specified index.
+
+🔹 2. Comparison
+boolean equals(Object another) – Compares two strings for equality.
+
+boolean equalsIgnoreCase(String another) – Compares two strings, ignoring case.
+
+int compareTo(String another) – Lexicographically compares two strings.
+
+boolean startsWith(String prefix) – Checks if the string starts with the given prefix.
+
+boolean endsWith(String suffix) – Checks if the string ends with the given suffix.
+
+🔹 3. Searching
+int indexOf(String str) – Returns the index of the first occurrence.
+
+int lastIndexOf(String str) – Returns the last occurrence index.
+
+boolean contains(CharSequence s) – Checks if the sequence exists in the string.
+
+🔹 4. Substring & Modification
+String substring(int beginIndex) – Extracts substring from index.
+
+String substring(int beginIndex, int endIndex) – Extracts substring between two indices.
+
+String replace(char oldChar, char newChar) – Replaces all oldChar with newChar.
+
+String replaceAll(String regex, String replacement) – Replaces all substrings matching regex.
+
+String replaceFirst(String regex, String replacement) – Replaces first substring matching regex.
+
+🔹 5. Case Conversion
+String toLowerCase() – Converts to lowercase.
+
+String toUpperCase() – Converts to uppercase.
+
+🔹 6. Trimming & Whitespace
+String trim() – Removes leading and trailing whitespace.
+
+String strip() – Removes leading and trailing whitespaces (Unicode-aware, Java 11+).
+
+String stripLeading() – Removes only leading whitespace.
+
+String stripTrailing() – Removes only trailing whitespace.
+
+🔹 7. Splitting & Joining
+String[] split(String regex) – Splits the string around matches of the given regex.
+
+static String join(CharSequence delimiter, CharSequence... elements) – Joins multiple strings.
+
+🔹 8. Conversion
+char[] toCharArray() – Converts the string to a character array.
+
+byte[] getBytes() – Converts the string to a byte array.
+
+static String valueOf(int i) – Converts int (or other primitives) to String.
+
+🔹 9. Interning & Identity
+String intern() – Returns the canonical representation of the string from the string pool.
+
+🔹 10. Miscellaneous
+boolean isEmpty() – Checks if the string is empty (length() == 0).
+
+boolean isBlank() – Checks if string is empty or contains only whitespaces (Java 11+).
+
+String concat(String str) – Concatenates the specified string.
+
+
+String Buffer 
+
+In Java, StringBuffer is a class used to create mutable (modifiable) sequences of characters. Unlike String (which is immutable), StringBuffer can be changed after it's created. It's also thread-safe, meaning it can be used safely in multi-threaded environments.
+
+Commonly Used StringBuffer Methods
+Here's a list of important StringBuffer methods:
+
+Method	Description
+append(String s)	Adds the specified string to the end.
+insert(int offset, String s)	Inserts the specified string at the given position.
+replace(int start, int end, String str)	Replaces characters from start to end with str.
+delete(int start, int end)	Removes characters from start to end.
+deleteCharAt(int index)	Removes the character at the specified index.
+reverse()	Reverses the contents of the buffer.
+setCharAt(int index, char ch)	Changes the character at the specified index.
+charAt(int index)	Returns the character at the specified index.
+length()	Returns the current length of the buffer.
+capacity()	Returns the current capacity (allocated size).
+ensureCapacity(int minimumCapacity)	Ensures the buffer can hold at least the specified capacity.
+setLength(int newLength)	Sets the length of the buffer.
+toString()	Converts the buffer into a String.
+
+Example
+java
+Copy code
+public class StringBufferExample {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Hello");
+        sb.append(" World"); // Hello World
+        sb.insert(5, ",");   // Hello, World
+        sb.replace(0, 5, "Hi"); // Hi, World
+        sb.delete(3, 5);     // Hi World
+        sb.reverse();        // dlroW iH
+        System.out.println(sb.toString());
+    }
+}

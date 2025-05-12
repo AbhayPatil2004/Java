@@ -24,7 +24,6 @@ public class TypeConversion{
         byte b = 30 ;
         int r = a * b ;
         System.out.println(r);
-        
 
     }
 }

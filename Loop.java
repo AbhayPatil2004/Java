@@ -19,5 +19,4 @@ public class Loop {
         }while( n < 10 );
     }
 
-
 }

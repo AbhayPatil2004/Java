@@ -51,7 +51,7 @@ public class DataTypes{
         int num3 = 1_00_000_0000;
         System.out.println(num3);
 
-        boolean bb = 1 ;
-        System.out.println(bb);
+        // boolean bb = 1 ;
+        // System.out.println(bb);
     }
 }
