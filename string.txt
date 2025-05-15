@@ -99,6 +99,7 @@ toString()	Converts the buffer into a String.
 Example
 java
 Copy code
+
 public class StringBufferExample {
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer("Hello");
