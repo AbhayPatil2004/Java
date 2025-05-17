@@ -2,7 +2,7 @@ class Computer{
 
 }
 
-class Laptop  Computer{
+class Laptop extends Computer{
 
 }
 
@@ -25,7 +25,8 @@ public class Poly {
         // B obj = new B();
         A obj = new B() ;
 
-        Computer lap = new Laptop();
+        // Computer lap = new Laptop();
+        // Laptop lap = new Computer();
 
     }
 }
