@@ -17,6 +17,10 @@ public class Loop {
             System.out.println(n);
             n ++ ;
         }while( n < 10 );
+
+        if( 1 == 1 ){
+            System.out.println("yes");
+        }
     }
 
 }

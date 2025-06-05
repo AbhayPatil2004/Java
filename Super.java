@@ -17,7 +17,7 @@
 //     public B(){
         
 //         super(10);
-//         System.out.println("I am in B ");
+//         System.out.println("I am in B");
 //     }
 
 //     public B( int n ){
